@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_activity"
+    tools:context=".login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount,UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="@string/tourism"
+                android:textColor="#FCF8F8"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+
+            <EditText
+                android:id="@+id/edt_loginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@id/nameApp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:backgroundTint="#FFC107"
+                android:drawableStart="@drawable/ic_send"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="#EBEAEA"
+                android:textColorHint="#EBEAEA"
+                android:textSize="23sp"
+                tools:ignore="RtlCompat,RtlHardcoded,UnusedAttribute" />
+
+
+            <EditText
+                android:id="@+id/edt_loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@id/edt_loginEmail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:backgroundTint="#FFC107"
+                android:drawableStart="@drawable/ic_lock_pass"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="#EBEAEA"
+                android:textColorHint="#EBEAEA"
+                android:textSize="23sp"
+                tools:ignore="RtlCompat,RtlHardcoded,UnusedAttribute" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_loginPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="77dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="74dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/back_login"
+                android:text="@string/login"
+                android:textColor="#CDCDE0"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/lay_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/don_t_have_an_account"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_linkToSignUpActivity"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sign_up_now"
+                    android:textColor="#0BD9F3"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lay_or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lay_signup"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/myview"
+                    android:layout_width="15dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="@string/or"
+                    android:textColor="#0BD9F3"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_orSign_In"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lay_or"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/sign_in_with_social_networks"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutAllButtonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_orSign_In"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_facebookLogin"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_facebook"
+                    android:gravity="center"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btn_gmailLogin"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_google"
+                    android:gravity="center"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

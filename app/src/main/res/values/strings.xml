@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TOURISM</string>
+    <string name="tourism">TOURISM</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_now">SignUp Now!</string>
+    <string name="sign_in_with_social_networks">Sign in with Social Networks</string>
+    <string name="join_us">join Us</string>
+    <string name="or">OR</string>
+</resources>
