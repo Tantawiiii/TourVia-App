@@ -125,6 +125,7 @@
                 android:layout_marginTop="56dp"
                 android:layout_marginEnd="74dp"
                 android:layout_marginRight="34dp"
+                android:layout_marginBottom="60dp"
                 android:background="@drawable/back_login"
                 android:text="@string/join_us"
                 android:textColor="#CDCDE0"

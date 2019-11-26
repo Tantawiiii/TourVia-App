@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.tourism.MainActivity;
@@ -170,8 +169,6 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 });
-
-
             }
 
         });
