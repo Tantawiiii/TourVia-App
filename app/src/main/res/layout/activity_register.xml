@@ -23,14 +23,13 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:text="@string/tourism"
-                android:textColor="#FCF8F8"
-                android:textSize="60sp"
+                android:textColor="#50D0E2"
+                android:textSize="69sp"
                 android:textStyle="bold"
                 tools:ignore="UnusedAttribute" />
 
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/circle_image_profile"
+            <ImageView
+                android:id="@+id/image_profile"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@id/nameApp"
@@ -43,7 +42,7 @@
                 android:id="@+id/edt_RegisterName"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:layout_below="@id/circle_image_profile"
+                android:layout_below="@id/image_profile"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentEnd="true"
@@ -60,7 +59,7 @@
                 android:inputType="textPersonName"
                 android:textColor="#EBEAEA"
                 android:textColorHint="#EBEAEA"
-                android:textSize="23sp"
+                android:textSize="21sp"
                 tools:ignore="Autofill,HardcodedText,RtlCompat,RtlHardcoded,UnusedAttribute" />
 
             <EditText
@@ -84,7 +83,7 @@
                 android:inputType="textEmailAddress"
                 android:textColor="#EBEAEA"
                 android:textColorHint="#EBEAEA"
-                android:textSize="23sp"
+                android:textSize="21sp"
                 tools:ignore="Autofill,RtlCompat,RtlHardcoded,UnusedAttribute" />
 
             <EditText
@@ -108,7 +107,7 @@
                 android:inputType="textPassword"
                 android:textColor="#EBEAEA"
                 android:textColorHint="#EBEAEA"
-                android:textSize="23sp"
+                android:textSize="21sp"
                 tools:ignore="Autofill,RtlCompat,RtlHardcoded,UnusedAttribute" />
 
             <Button
@@ -130,6 +129,8 @@
                 android:text="@string/join_us"
                 android:textColor="#CDCDE0"
                 android:textSize="24sp"
+                android:clickable="true"
+                android:focusable="true"
                 tools:ignore="RtlHardcoded" />
 
         </RelativeLayout>

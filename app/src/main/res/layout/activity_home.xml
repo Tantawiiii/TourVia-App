@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="76sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_where"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/where_are_you_going"
+        android:textColor="#C9D6D6"
+        android:textSize="33sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_where">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            tools:ignore="MissingConstraints,UselessLeaf">
+
+            <Button
+                android:id="@+id/btn_sharmElShaikh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/btn_home"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:focusable="true"
+                android:fontFamily="cursive"
+                android:paddingEnd="15dp"
+                android:text="@string/sharm_el_shaikh"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/btn_dahab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/btn_home"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:focusable="true"
+                android:fontFamily="cursive"
+                android:paddingEnd="15dp"
+                android:text="@string/dahab"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+
+            <Button
+                android:id="@+id/btn_ismalia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/btn_home"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:focusable="true"
+                android:fontFamily="cursive"
+                android:paddingEnd="15dp"
+                android:text="@string/ismailia"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/btn_gologin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_home"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

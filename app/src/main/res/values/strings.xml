@@ -9,4 +9,24 @@
     <string name="sign_in_with_social_networks">Sign in with Social Networks</string>
     <string name="join_us">join Us</string>
     <string name="or">OR</string>
+    <string name="where_are_you_going">Where are you going ?</string>
+    <string name="sharm_el_shaikh">Sharm El-Shaikh</string>
+    <string name="dahab">Dahab</string>
+    <string name="nuweiba">Nuweiba</string>
+    <string name="ismailia">Ismailia</string>
+    <string name="where_do_you_want_to_go">Where do you want to go ?</string>
+    <string name="welcome_sharm_el_shaikh">Welcome , Sharm El-Shaikh</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="choose_your_restaurants">Choose Your Restaurants</string>
+    <string name="choose_your_hotel">Choose Your Hotel</string>
+    <string name="hotels">Hotels</string>
+    <string name="streets">Streets</string>
+    <string name="choose_your_street">Choose Your Street</string>
+    <string name="cafes">Cafes</string>
+    <string name="choose_your_cafe">Choose Your   Cafes</string>
+    <string name="welcome_dahab">Welcome , Dahab</string>
+    <string name="welcome_ismailia">Welcome , Ismailia</string>
+    <string name="welcome_nuweba">Welcome , Nuweba</string>
+    <string name="landmarks">landmarks</string>
+    <string name="logout">LogOut</string>
 </resources>

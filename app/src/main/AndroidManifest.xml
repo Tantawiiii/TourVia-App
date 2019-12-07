@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.tourism">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
@@ -11,8 +14,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".login.RegisterActivity"/>
-        <activity android:name=".login.LoginActivity"/>
+        <activity
+            android:name=".Data.Restaurant.IsmiliaRestaurantRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.LandMarks.IsmiliaLandMarkRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.hotel.IsmiliaHotelRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.Restaurant.DahabRestaurantRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.hotel.DahabHotelRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.LandMarks.DahabLandRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.LandMarks.SharmLandMarksRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.Restaurant.SharmRestaurantRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Data.hotel.SharmhotelRecycle"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Countries.IsmailliaActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Countries.DahabActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Countries.SharmActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".login.LoginActivity" />
         <activity android:name=".login.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +59,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".HomeActivity" />
     </application>
 
 </manifest>

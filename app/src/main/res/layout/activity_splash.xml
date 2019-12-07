@@ -14,7 +14,7 @@
         android:fontFamily="cursive"
         android:gravity="center"
         android:text="@string/app_name"
-        android:textColor="#E2DEDE"
+        android:textColor="#4E818B"
         android:textSize="75sp"
         android:textStyle="bold"
         android:layout_marginBottom="88dp"

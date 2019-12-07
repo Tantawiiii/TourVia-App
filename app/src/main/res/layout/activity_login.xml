@@ -13,8 +13,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
+
 
             <TextView
                 android:id="@+id/nameApp"
@@ -24,11 +24,11 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:text="@string/tourism"
-                android:textColor="#FCF8F8"
-                android:textSize="60sp"
+                android:autofillHints="@string/app_name"
+                android:textColor="#26C9DD"
                 android:textStyle="bold"
+                android:textSize="69sp"
                 tools:ignore="UnusedAttribute" />
-
 
             <EditText
                 android:id="@+id/edt_loginEmail"
@@ -51,7 +51,7 @@
                 android:inputType="textEmailAddress"
                 android:textColor="#EBEAEA"
                 android:textColorHint="#EBEAEA"
-                android:textSize="23sp"
+                android:textSize="21sp"
                 tools:ignore="RtlCompat,RtlHardcoded,UnusedAttribute" />
 
 
@@ -76,7 +76,8 @@
                 android:inputType="textPassword"
                 android:textColor="#EBEAEA"
                 android:textColorHint="#EBEAEA"
-                android:textSize="23sp"
+                android:autofillHints="@string/password"
+                android:textSize="21sp"
                 tools:ignore="RtlCompat,RtlHardcoded,UnusedAttribute" />
 
 
@@ -98,6 +99,8 @@
                 android:text="@string/login"
                 android:textColor="#CDCDE0"
                 android:textSize="24sp"
+                android:clickable="true"
+                android:focusable="true"
                 tools:ignore="RtlHardcoded" />
 
             <LinearLayout
@@ -202,7 +205,9 @@
                     android:layout_marginRight="15dp"
                     android:background="@drawable/ic_facebook"
                     android:gravity="center"
-                    tools:ignore="RtlHardcoded" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
 
                 <Button
                     android:id="@+id/btn_gmailLogin"
@@ -212,7 +217,9 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/ic_google"
                     android:gravity="center"
-                    tools:ignore="RtlHardcoded" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
 
             </LinearLayout>
         </RelativeLayout>
