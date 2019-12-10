@@ -1,15 +1,25 @@
 package com.example.tourism.Data;
 
+/**
+ * Created by : Ahmed Ramadan
+ * date : 9 / 2019
+ * ahmedtramadan4@gmail.com
+ */
+
+
 public class DataModel {
 
     private String img;
     private String name;
     private String des;
+    private String location;
 
-    public DataModel(String imge, String name, String describtion) {
+
+    public DataModel(String imge, String name, String describtion, String location) {
         this.img = imge;
         this.name = name;
         this.des = describtion;
+        this.location = location;
     }
 
     public DataModel() {
@@ -37,5 +47,13 @@ public class DataModel {
 
     public void setDes(String des) {
         this.des = des;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }

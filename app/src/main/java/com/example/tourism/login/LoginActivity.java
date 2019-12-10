@@ -34,6 +34,13 @@ import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
 
+    /**
+     * Created by : Ahmed Ramadan
+     * date : 9 / 2019
+     * ahmedtramadan4@gmail.com
+     */
+
+
     // Declaration
     private EditText edt_LoginEmail;
     private EditText edt_LoginPassword;

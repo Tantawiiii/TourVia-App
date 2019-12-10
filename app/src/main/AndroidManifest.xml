@@ -15,6 +15,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".Data.ClickItem.DetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
             android:name=".Data.Restaurant.IsmiliaRestaurantRecycle"
             tools:ignore="InnerclassSeparator" />
         <activity

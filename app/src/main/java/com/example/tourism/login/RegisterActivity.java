@@ -25,6 +25,13 @@ import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    /**
+     * Created by : Ahmed Ramadan
+     * date : 9 / 2019
+     * ahmedtramadan4@gmail.com
+     */
+
+
     private EditText edt_NamwUserReg, edt_EmailUserReg, edt_PasswordUserReg;
 
     //fireBase Declaration

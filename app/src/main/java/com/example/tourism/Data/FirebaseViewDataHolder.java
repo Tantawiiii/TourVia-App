@@ -11,7 +11,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.tourism.R;
 import com.squareup.picasso.Picasso;
 
+
 public class FirebaseViewDataHolder extends RecyclerView.ViewHolder {
+
+    /**
+     * Created by : Ahmed Ramadan
+     * date : 9 / 2019
+     * ahmedtramadan4@gmail.com
+     */
+
 
     private View mView;
     private FirebaseViewDataHolder.ClickListener mClick;
@@ -21,6 +29,7 @@ public class FirebaseViewDataHolder extends RecyclerView.ViewHolder {
 
         mView = itemView;
 
+        // item Short Click
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,6 +39,7 @@ public class FirebaseViewDataHolder extends RecyclerView.ViewHolder {
             }
         });
 
+        // item Long Click
         itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -39,14 +49,17 @@ public class FirebaseViewDataHolder extends RecyclerView.ViewHolder {
         });
     }
 
-    public void setDetails(Context ctx, String name, String image, String description) {
+    // Set details too Recycle ViewRow
+    public void setDetails(Context ctx, String name, String image, String description, String location) {
 
         TextView mName = mView.findViewById(R.id.nameforitem);
         TextView mDescription = mView.findViewById(R.id.descriptionforitem);
         ImageView mImage = mView.findViewById(R.id.imageforitem);
+        TextView mlocation = mView.findViewById(R.id.location);
 
         mName.setText(name);
         mDescription.setText(description);
+        mlocation.setText(location);
 
         Picasso.with(ctx).load(image).into(mImage);
 
@@ -58,8 +71,8 @@ public class FirebaseViewDataHolder extends RecyclerView.ViewHolder {
     }
 
     public interface ClickListener {
-        void onItemClick(View view, int postion);
 
+        void onItemClick(View view, int postion);
         void onItemLongClick(View view, int postion);
     }
 
